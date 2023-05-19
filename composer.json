@@ -22,7 +22,6 @@
   "autoload": {
     "files": [
       "src/slugify.php",
-      "src/probability.php",
       "src/prevent_cache.php",
       "src/array_rand_bias.php"
     ]
