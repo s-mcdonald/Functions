@@ -40,6 +40,13 @@ $myarray = [
 The names towards the start of the index such as David, David and David are more likely to be plucked.
 However, all values have a chance, and with enough iterations will be selected.
 
+
+```php
+echo array_rand_bias($array); // will most likely print `David` or `Mathew` 
+```
+
+
+
 ```
 composer require s-mcdonald/functions
 ```
