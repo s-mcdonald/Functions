@@ -1,10 +1,10 @@
 {
   "name": "s-mcdonald/functions",
   "description": "array_rand_bias plucks a random value from an array with a bias towards the start of the array index.",
-  "keywords": ["probability", "random_bool", "array_rand_bias"],
+  "keywords": ["probability", "random_bool", "array_rand_bias", "random_bias"],
   "homepage": "https://github.com/s-mcdonald/Functions",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "authors": [
     {
       "name": "Sam McDonald",
@@ -22,6 +22,7 @@
   "autoload": {
     "files": [
       "src/slugify.php",
+      "src/rand_bias.php",
       "src/random_bool.php",
       "src/prevent_cache.php",
       "src/array_rand_bias.php"
