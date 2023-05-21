@@ -2,6 +2,10 @@
 
 include_once '../vendor/autoload.php';
 
+for ($i = 0; $i < 10; $i++) {
+    echo $i . ' ' . random_bool() . PHP_EOL;
+}
+
 $myarray = [
     'David',
     'Matthew',
