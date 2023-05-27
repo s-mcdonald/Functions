@@ -1,13 +1,16 @@
 <?php
 
+declare(strict_types=1);
+
+namespace SamMcDonald\Functions;
 
 if (!function_exists('slugify')) {
-    function slugify(string|Stringable $string, string $divider = '-'): string
+    function slugify(string $string, string $divider = '-'): string
     {
-        $text = preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
-
         $slug = strtolower(
-            trim($text, $divider)
+            trim(
+                preg_replace('/[^A-Za-z0-9-]+/', $divider, $string),
+                $divider)
         );
 
         return empty($slug) ? '-' : $slug;

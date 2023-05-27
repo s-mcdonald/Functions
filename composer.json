@@ -1,10 +1,10 @@
 {
   "name": "s-mcdonald/functions",
-  "description": "array_rand_bias plucks a random value from an array with a bias towards the start of the array index.",
-  "keywords": ["probability", "random_bool", "array_rand_bias", "rand_bias"],
+  "description": "assortment of php functions",
+  "keywords": ["slugify", "like_int", "rand_bias", "random_bool", "array_rand_bias", "array_entry_exist"],
   "homepage": "https://github.com/s-mcdonald/Functions",
   "license": "MIT",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "authors": [
     {
       "name": "Sam McDonald",
@@ -13,7 +13,7 @@
     }
   ],
   "require": {
-    "php": ">=8.1"
+    "php": ">=7.4"
   },
   "require-dev": {
     "phpunit/phpunit": "^10",
@@ -22,10 +22,12 @@
   "autoload": {
     "files": [
       "src/slugify.php",
+      "src/like_int.php",
       "src/rand_bias.php",
       "src/random_bool.php",
       "src/prevent_cache.php",
-      "src/array_rand_bias.php"
+      "src/array_rand_bias.php",
+      "src/array_entry_exist.php"
     ]
   },
   "autoload-dev": {

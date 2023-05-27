@@ -1,6 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
+namespace SamMcDonald\Functions;
+
+
 if (!function_exists('prevent_cache')) {
+    /**
+     * @deprecated Most if not all modern cms now have this built in.
+     */
     function prevent_cache(): bool
     {
         if (!\headers_sent()) {
