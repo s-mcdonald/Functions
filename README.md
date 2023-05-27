@@ -2,6 +2,14 @@
 [![Source](https://img.shields.io/badge/source-S_McDonald-blue.svg)](https://github.com/s-mcdonald/Functions)
 [![Source](https://img.shields.io/badge/license-MIT-gold.svg)](https://github.com/s-mcdonald/Functions)
 
+### Setup.
+First install via composer, then import the function in the using statements.
+eg:
+```php
+use function SamMcDonald\Functions\random_bool;
+```
+
+
 ### `random_bool`
 
 ```php
