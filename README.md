@@ -2,14 +2,16 @@
 [![Source](https://img.shields.io/badge/source-S_McDonald-blue.svg)](https://github.com/s-mcdonald/Functions)
 [![Source](https://img.shields.io/badge/license-MIT-gold.svg)](https://github.com/s-mcdonald/Functions)
 
-`Functions` is a set of small php functions that can be imported via composer.
-
-
-`$random_value` will be a value from the array picked at random, however there is a bias 
-towards the start of the array.
+### `random_bool`
 
 ```php
-$random_value = array_rand_bias($array);
+random_bool() ? 'foo' : 'bar';
+```
+
+### `array_rand_bias`
+
+```php
+echo array_rand_bias($array);
 ```
 
 For example, take the following array of names;
@@ -17,35 +19,43 @@ For example, take the following array of names;
 $myarray = [
     'David',
     'Matthew',
-    'Mark',
-    'James',
-    'John',
-    'Paul',
-    'Michael',
-    'Daniel',
-    'Robert',
-    'Andrew',
-    'Thomas',
-    'Joseph',
-    'Anthony',
-    'William',
-    'Christopher',
-    'Steven',
-    'Richard',
-    'Benjamin',
-    'Charles',
+     ...
     'George',
 ];
 ```
-The names towards the start of the index such as David, David and David are more likely to be plucked.
-However, all values have a chance, and with enough iterations will be selected.
+There is a descending trend in the names from the start of the index such as David.
+So David will be picked mostly, then Mathew and so on until the last element.
 
+
+### `array_entry_exist`
 
 ```php
-echo array_rand_bias($array); // will most likely print `David` or `Mathew` 
+if (array_entry_exist($array, 'foo', 'bar')) {...}
+
+// Which is a more convenient way of typing 
+if (isset($array['foo']) && $array['foo'] === 'bar') {}
 ```
 
 
+### `like_int`
+
+```php
+$like_int = "55";
+
+if(like_int($like_int)) {
+    echo "Yes this is could certainly be cast to an int.", PHP_EOL;
+}
+```
+
+
+### `slugify`
+
+```php
+echo slugify("My friends long weekend at Bernie's");
+```
+
+
+## Install via composer
 
 ```
 composer require s-mcdonald/functions
