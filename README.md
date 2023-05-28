@@ -44,6 +44,18 @@ if (array_entry_exist($array, 'foo', 'bar')) {...}
 if (isset($array['foo']) && $array['foo'] === 'bar') {}
 ```
 
+### `array_rand_pluck`
+
+```php
+$randomValue = array_rand_pluck($array);
+
+// Alternative
+$randomValue = $array[array_rand($array, 1)];
+```
+
+
+
+
 
 ### `like_int`
 
