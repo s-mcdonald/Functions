@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
+## [0.3.0] - 6-6-2023
+
+- Added: `like_float` function 
+- Added: `digits` function 
+- Added: `number_flip` function 
+- Added: tests
+- bugfix: like_int and like_float were not returning correct values. Changed the workings.
+
+
 ## [0.2.0] - 29-5-2023
 
 - Added: `array_rand_pluck` function - Pluck random element from array.

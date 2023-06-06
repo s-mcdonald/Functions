@@ -1,10 +1,10 @@
 {
   "name": "s-mcdonald/functions",
   "description": "assortment of php functions",
-  "keywords": ["slugify", "like_int", "rand_bias", "random_bool", "array_rand_bias", "array_entry_exist"],
+  "keywords": ["slugify", "like_int", "like_float", "rand_bias", "random_bool", "array_rand_bias", "array_entry_exist"],
   "homepage": "https://github.com/s-mcdonald/Functions",
   "license": "MIT",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "authors": [
     {
       "name": "Sam McDonald",
@@ -13,7 +13,7 @@
     }
   ],
   "require": {
-    "php": ">=7.4"
+    "php": ">=8.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^10",
@@ -21,9 +21,13 @@
   },
   "autoload": {
     "files": [
+      "src/digits.php",
       "src/slugify.php",
       "src/like_int.php",
       "src/rand_bias.php",
+      "src/like_float.php",
+      "src/like_number.php",
+      "src/number_flip.php",
       "src/random_bool.php",
       "src/prevent_cache.php",
       "src/array_rand_bias.php",
