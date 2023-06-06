@@ -10,7 +10,7 @@ use function SamMcDonald\Functions\slugify;
  */
 class SlugifyTest extends TestCase
 {
-    public function testSomething(): void
+    public function testSlugify(): void
     {
         $input = 'this is_the   slug';
         $expected = 'this-is-the-slug';

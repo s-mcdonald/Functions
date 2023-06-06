@@ -4,7 +4,7 @@
   "keywords": ["slugify", "like_int", "like_float", "rand_bias", "random_bool", "array_rand_bias", "array_entry_exist"],
   "homepage": "https://github.com/s-mcdonald/Functions",
   "license": "MIT",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "authors": [
     {
       "name": "Sam McDonald",

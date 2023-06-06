@@ -10,7 +10,7 @@ use function SamMcDonald\Functions\digits;
  */
 class DigitsTest extends TestCase
 {
-    public function testSomething(): void
+    public function testDigits(): void
     {
         $a = str_split("012345");
         $b = digits("012345.6");
